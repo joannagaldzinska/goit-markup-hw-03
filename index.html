@@ -12,23 +12,21 @@
 <body>
     <!-- неизменная шапка сайта -->
     <header>
-        <div class="container">
-                    <nav class="nav">
-                        <div class="nav-container">
+        <div class="container header">
+                    <nav class="navigation">
                             <a href="" class="logo"><span class="part-first">Web</span><span class="part-second">Studio</span></a>
                     
                             <ul class="nav list">
-                                <li><a class="active-page" href="./index.html">Студия</a></li>
-                                <li><a href="./portfolio.html">Портфолио</a></li>
-                                <li><a href="">Контакты</a></li>
+                                <li class="nav-item"><a class="active-page" href="./index.html">Студия</a></li>
+                                <li class="nav-item"><a href="./portfolio.html">Портфолио</a></li>
+                                <li class="nav-item"><a href="">Контакты</a></li>
                             </ul>
-                        </div>
                     </nav>
                     
                     <div class="contacts-container">
                         <ul class="contacts list">
-                            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li><a href="tel:00380961111111">+38 096 111 11 11</a></li>
+                            <li class="contact-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="contact-item"><a href="tel:00380961111111">+38 096 111 11 11</a></li>
                         </ul>
                     </div>
         </div>
@@ -49,22 +47,22 @@
            <div class="container">
                 <h2 hidden>Наши преимущества</h2> <!-- заголовок будет невидимым, но должен существовать -->
                 <ul class="advantages-list list">
-                    <li>
+                    <li class="advantages-list-item">
                         <img src="./images/antenna.svg" alt="антенна">
                         <h3>Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="advantages-list-item">
                         <img src="./images/clock.svg" alt="часы">
                         <h3>Пунктуальность</h3>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="advantages-list-item">
                         <img src="./images/diagram.svg" alt="схема">
                         <h3>Планирование</h3>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="advantages-list-item">
                         <img src="./images/astronaut.svg" alt="космонавт">
                         <h3>Современные технологии</h3>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
@@ -85,13 +83,14 @@
                     <li class="activities-list-item">
                         <h3>Мобильные приложения</h3>
                         <img src="./images/phone2.jpg" alt="мобильный телефон" width="370" height="294">
-                        </liclass="activities-list-item">
+                    </li>
                     <li class="activities-list-item">
                         <h3>Дизайнерские решения</h3>
                         <img src="./images/monitor3.jpg" alt="монитор" width="370" height="294">
                     </li>
+                </ul>
             </div>
-            </ul>
+    
         </section>
 
         <!-- Наша команда -->
@@ -103,7 +102,7 @@
                         <img src="./images/person1.jpg" alt="фото Кучеренко" width="270" height="260">
                         <h3>Николай Кучеренко</h3>
                         <p>Product Designer</p>
-                        <ul class="list">
+                        <ul class="sm-list list">
                             <li><a href="" aria-label="insta icon">I</a></li>
                             <li><a href="" aria-label="twitter icon">T</a></li>
                             <li><a href="" aria-label="facebook icon">F</a></li>
@@ -114,7 +113,7 @@
                         <img src="./images/person2.jpg" alt="фото Иванова" width="270" height="260">
                         <h3>Ольга Иванова</h3>
                         <p>Frontend Developer</p>
-                        <ul class="list">
+                        <ul class="sm-list list">
                             <li><a href="" aria-label="insta icon">I</a></li>
                             <li><a href="" aria-label="twitter icon">T</a></li>
                             <li><a href="" aria-label="facebook icon">F</a></li>
@@ -125,7 +124,7 @@
                         <img src="./images/person3.jpg" alt="фото Шевченко" width="270" height="260">
                         <h3>Андрей Шевченко</h3>
                         <p>Marketing</p>
-                        <ul class="list">
+                        <ul class="sm-list list">
                             <li><a href="" aria-label="insta icon">I</a></li>
                             <li><a href="" aria-label="twitter icon">T</a></li>
                             <li><a href="" aria-label="facebook icon">F</a></li>
@@ -136,7 +135,7 @@
                         <img src="./images/person4.jpg" alt="фото Николаев" width="270" height="260">
                         <h3>Иван Николаев</h3>
                         <p>UI Designer</p>
-                        <ul class="list">
+                        <ul class="sm-list list">
                             <li><a href="" aria-label="insta icon">I</a></li>
                             <li><a href="" aria-label="twitter icon">T</a></li>
                             <li><a href="" aria-label="facebook icon">F</a></li>
@@ -182,38 +181,39 @@
 <!-- футер -->
 
     <footer>
-        <div class="container">
-            <div>
+        <div class="footer-container container">
+            <div class="footer-logo">
                 <a href="" class="logo"><span class="part-first">Web</span><span class="part-second">Studio</span></a>
-            
+    
                 <address class="location">
                     <a class="map" href="https://goo.gl/maps/HwrvqcL7cg5Yp1Jj8">г. Киев, пр-т Леси Украинки, 26</a>
-            
+    
                     <ul class="footer-contacts list">
                         <li><a class="footer-contacts-details" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li><a class="footer-contacts-details" href="tel:00380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
-            
-            
             </div>
-            
-            <div>
-                <b class="attention">Присоединяйтесь</b>
-                <ul class="sm-list list">
-                    <li><a href="" aria-label="insta icon">I</a></li>
-                    <li><a href="" aria-label="twitter icon">T</a></li>
-                    <li><a href="" aria-label="facebook icon">F</a></li>
-                    <li><a href="" aria-label="linkedin icon">LI</a></li>
-                </ul>
-            </div>
-            
-            <div>
-                <b class="attention">Подпишитесь на рассылку</b>
-                <!-- здесь будет форма -->
+    
+            <div class="footer-attention">
+                <div class="join">
+                    <b class="attention">Присоединяйтесь</b>
+                    <ul class="sm-list list">
+                        <li><a href="" aria-label="insta icon">I</a></li>
+                        <li><a href="" aria-label="twitter icon">T</a></li>
+                        <li><a href="" aria-label="facebook icon">F</a></li>
+                        <li><a href="" aria-label="linkedin icon">LI</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="form">
+                    <b class="attention">Подпишитесь на рассылку</b>
+                    <!-- здесь будет форма -->
+                </div>
             </div>
         </div>
-    </footer>    
+    </footer>
 </body>
 </html>
 
