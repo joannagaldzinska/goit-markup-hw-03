@@ -46,7 +46,7 @@
         <section class="advantages section">
            <div class="container">
                 <h2 hidden>Наши преимущества</h2> <!-- заголовок будет невидимым, но должен существовать -->
-                <ul class="advantages-list list">
+                <ul class="advantages-list list link">
                     <li class="advantages-list-item">
                         <img src="./images/antenna.svg" alt="антенна">
                         <h3>Внимание к деталям</h3>
@@ -75,7 +75,7 @@
         <section class="activities section">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul class="activities-list list">
+                <ul class="activities-list list link">
                     <li class="activities-list-item">
                         <h3>Десктопные приложения</h3>
                         <img src="./images/laptop1.jpg" alt="пк" width="370" height="294">
@@ -103,10 +103,10 @@
                         <h3>Николай Кучеренко</h3>
                         <p>Product Designer</p>
                         <ul class="sm-list list">
-                            <li><a href="" aria-label="insta icon">I</a></li>
-                            <li><a href="" aria-label="twitter icon">T</a></li>
-                            <li><a href="" aria-label="facebook icon">F</a></li>
-                            <li><a href="" aria-label="linkedin icon">LI</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="insta icon">I</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="twitter icon">T</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="facebook icon">F</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="linkedin icon">LI</a></li>
                         </ul>
                     </li>
                     <li class="our-team-list-item">
@@ -114,10 +114,10 @@
                         <h3>Ольга Иванова</h3>
                         <p>Frontend Developer</p>
                         <ul class="sm-list list">
-                            <li><a href="" aria-label="insta icon">I</a></li>
-                            <li><a href="" aria-label="twitter icon">T</a></li>
-                            <li><a href="" aria-label="facebook icon">F</a></li>
-                            <li><a href="" aria-label="linkedin icon">LI</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="insta icon">I</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="twitter icon">T</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="facebook icon">F</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="linkedin icon">LI</a></li>
                         </ul>
                     </li>
                     <li class="our-team-list-item">
@@ -125,10 +125,10 @@
                         <h3>Андрей Шевченко</h3>
                         <p>Marketing</p>
                         <ul class="sm-list list">
-                            <li><a href="" aria-label="insta icon">I</a></li>
-                            <li><a href="" aria-label="twitter icon">T</a></li>
-                            <li><a href="" aria-label="facebook icon">F</a></li>
-                            <li><a href="" aria-label="linkedin icon">LI</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="insta icon">I</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="twitter icon">T</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="facebook icon">F</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="linkedin icon">LI</a></li>
                         </ul>
                     </li>
                     <li class="our-team-list-item">
@@ -136,10 +136,10 @@
                         <h3>Иван Николаев</h3>
                         <p>UI Designer</p>
                         <ul class="sm-list list">
-                            <li><a href="" aria-label="insta icon">I</a></li>
-                            <li><a href="" aria-label="twitter icon">T</a></li>
-                            <li><a href="" aria-label="facebook icon">F</a></li>
-                            <li><a href="" aria-label="linkedin icon">LI</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="insta icon">I</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="twitter icon">T</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="facebook icon">F</a></li>
+                            <li class="sm-list-item"><a href="" aria-label="linkedin icon">LI</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -156,19 +156,19 @@
                         <a class="client" href="" target="_blank">
                             <img class="clients-list-item-icon" src="./images/logo1.svg" alt="логотип компании"></a>
                     </li>
-                    <li>
+                    <li class="clients-list-item">
                         <a href="" target="_blank"><img src="./images/logo2.svg" alt="логотип компании"></a>
                     </li>
-                    <li>
+                    <li class="clients-list-item">
                         <a href="" target="_blank"><img src="./images/logo3.svg" alt="логотип компании"></a>
                     </li>
-                    <li>
+                    <li class="clients-list-item">
                         <a href="" target="_blank"><img src="./images/logo4.svg" alt="логотип компании"></a>
                     </li>
-                    <li>
+                    <li class="clients-list-item">
                         <a href="" target="_blank"><img src="./images/logo5.svg" alt="логотип компании"></a>
                     </li>
-                    <li>
+                    <li class="clients-list-item">
                         <a href="" target="_blank"><img src="./images/logo6.svg" alt="логотип компании"></a>
                     </li>
                 </ul>
@@ -182,8 +182,10 @@
 
     <footer>
         <div class="footer-container container">
-            <div class="footer-logo">
-                <a href="" class="logo"><span class="part-first">Web</span><span class="part-second">Studio</span></a>
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <a class="logo" href=""><span class="part-first">Web</span><span class="part-second">Studio</span></a>
+                </div>
     
                 <address class="location">
                     <a class="map" href="https://goo.gl/maps/HwrvqcL7cg5Yp1Jj8">г. Киев, пр-т Леси Украинки, 26</a>
@@ -199,10 +201,10 @@
                 <div class="join">
                     <b class="attention">Присоединяйтесь</b>
                     <ul class="sm-list list">
-                        <li><a href="" aria-label="insta icon">I</a></li>
-                        <li><a href="" aria-label="twitter icon">T</a></li>
-                        <li><a href="" aria-label="facebook icon">F</a></li>
-                        <li><a href="" aria-label="linkedin icon">LI</a></li>
+                        <li class="sm-list-item"><a href="" aria-label="insta icon">I</a></li>
+                        <li class="sm-list-item"><a href="" aria-label="twitter icon">T</a></li>
+                        <li class="sm-list-item"><a href="" aria-label="facebook icon">F</a></li>
+                        <li class="sm-list-item"><a href="" aria-label="linkedin icon">LI</a></li>
                     </ul>
                 </div>
     

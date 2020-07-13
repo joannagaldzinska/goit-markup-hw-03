@@ -1,3 +1,12 @@
+/* 
+1. done
+2. comment above
+3. done (dobavila klas - link:font-size:0px;)
+4. ok, done. но на вебинаре сказали, чтобы мы разделили это в этом случае.
+5. done (dobavila klas - link:font-size:0px;)
+6. */
+
+
 :root{
     --primary-text-color: #757575;
     --black-title-color: #212121;
@@ -5,8 +14,10 @@
     --additional-color: #2196F3;
 
     --primary-bgc: #ffffff;
+    --secondary-bgc: #F5F4FA;
     --button-bcg: #F5F4FA;
     --temporary-bgc: #c2c2c2;
+    --footer-bgc:#2f303a;
 }
 
 html{
@@ -19,7 +30,7 @@ html{
 
 body{
     color:var(--primary-text-color);
-    background-color: var(--temporary-bgc);
+    background-color: var(--primary-bgc);
     font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 1.14;
@@ -33,9 +44,12 @@ body{
     margin: 0;
 }
 
+.link{
+    font-size: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p, b {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 .nav .active-page{
@@ -61,11 +75,6 @@ h1, h2, h3, h4, h5, h6, p, b {
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid black;
-}
-
-section{
-    outline: 2px solid red;
 }
 
 /* LOGO */
@@ -112,6 +121,12 @@ section{
 .nav .nav-item+ .nav-item{
     margin-left: 50px;
 }
+
+.container.header{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 
 /* CONTACTS */
 
@@ -162,7 +177,10 @@ section{
     line-height: 1.36;
     letter-spacing: 0.06em;
     padding-top: 200px;
+    margin: 0;
     margin-bottom: 30px;
+
+    color: red;
 }
 
 .hero a{
@@ -196,17 +214,20 @@ section{
     color: var(--black-title-color);
     text-transform: uppercase;
     font-weight: bold;
-    
+  
 }
 
 .advantages-list img{
     padding: 25px 100px;
+    margin-bottom: 30px;
 
-    outline: 1px solid black;
+    background-color: var(--secondary-bgc);
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .advantages-list h3{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 10px;
 }
 
@@ -217,6 +238,10 @@ section{
 
 .advantages-list{
     display: flex;
+}
+
+.advantages-list-item{
+    width: 270px;
 }
 
 .advantages-list .advantages-list-item+ .advantages-list-item{
@@ -234,6 +259,8 @@ section{
 .activities-list h3{
     color: var(--white-title-color);
     text-align: center;
+
+    color: red;
 }
 
 .activities-list{
@@ -246,6 +273,7 @@ section{
 .team{
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--secondary-bgc);
 }
 
 .team img{
@@ -280,16 +308,26 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: var(--primary-bgc);  
 }
 
-.sm-list a:hover{
+
+.sm-list-item:hover,
+.sm-list-item:focus{
     background-color: var(--additional-color);
 }
 
 .sm-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 206px;
+    margin-bottom: 24px;
+}
+
+li.sm-list-item{
+    width: 44px;
+    height: 44px;
 }
 
 /* Постоянные клиенты  */
@@ -308,15 +346,46 @@ section{
     justify-content: space-between;
 }
 
+.clients-list-item{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-list-item-icon{
+    text-align: center;
+}
+
 /* footer */
 
+footer{
+    background-color: var(--footer-bgc);
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+}
 .location .map{
     color: var(--white-title-color);
     font-size: 14px;
     line-height: 1.7;
     font-style: normal;
     text-decoration: none;
+    margin-bottom: 9px;
 }
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .footer-contacts .footer-contacts-details{
     color: rgba(255, 255, 255, 0.6);
@@ -324,8 +393,12 @@ section{
     line-height: 1.7;
     font-style: normal;
     text-decoration: none;
+
 }
 
+.footer-contacts>li{
+     margin-bottom: 9px;
+}
 .attention{
     color: var(--white-title-color);
     text-transform: uppercase;
@@ -334,16 +407,24 @@ section{
 
 .footer-container{
     display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    
+}
+
+.footer-info{
+    padding-top: 60px;
 }
 
 .footer-logo{
-    padding-top: 60px;
+    margin: 0;
+    margin-bottom: 20px;
 }
+
 
 .join{
     display: flex;
     flex-direction: column;
-    margin-left: 69px;
 }
 
 .footer-attention{
@@ -356,19 +437,21 @@ section{
 
 /* PORTFOLIO */
 
+.portfolio{
+    padding-top: 93px;
+}
+
 button{
     display: inline-block;
     border: 1px solid transparent;
+    border-radius: 4px;
 }
 
-.container.buttons{
-    display: flex;
-    justify-content: center;
-    margin-top: 93px;
-}
 .button-list{
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-button{
@@ -380,7 +463,6 @@ button{
     line-height: 1.62;
     text-align: center;
     padding:6px 22px 6px 22px;
-
 }
 
 .button-list .item+ .item{
@@ -389,10 +471,9 @@ button{
 
 /* карты */
 
-.container.cards{
-    margin-top: 34px;
+.portfolio{
+    padding-bottom: 94px;
 }
-
 .portfolio-button:hover{
     color: var(--white-title-color);
     background-color: var(--additional-color);
@@ -408,12 +489,16 @@ button{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .portfolio-type{
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
 
 .portfolio-description{
@@ -433,6 +518,13 @@ button{
     width:370px;
     margin-right: 30px;
     margin-bottom: 30px;
+
+    background-color: var(--primary-bgc);
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-list-item img{
+    margin-bottom: 20px;
 }
 
 .portfolio-list-item:nth-child(3n){
