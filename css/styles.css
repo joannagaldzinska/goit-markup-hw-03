@@ -86,6 +86,10 @@ h1, h2, h3, h4, h5, h6, p, b {
     color: var(--black-title-color);
 }
 
+.footer-logo .part-second{
+    color: #ffffff;
+}
+
 .logo{
     font-family: Raleway, sans-serif;
     text-decoration: none;
