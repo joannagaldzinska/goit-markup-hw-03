@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6, p, b {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
+
     text-align: center;
     margin-bottom: 50px;
 }
@@ -96,6 +97,7 @@ h1, h2, h3, h4, h5, h6, p, b {
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
+
     margin-right: 85px;
 }
 
@@ -187,7 +189,11 @@ h1, h2, h3, h4, h5, h6, p, b {
     color: red;
 }
 
-.hero a{
+.hero .btn{
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+
     color: var(--white-title-color);
     background-color: var(--additional-color);
     text-decoration: none;
@@ -196,12 +202,6 @@ h1, h2, h3, h4, h5, h6, p, b {
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;   
-}
-
-.btn{
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 4px;
 }
 
 /* наши преимущества */
@@ -370,6 +370,11 @@ li.sm-list-item{
 footer{
     background-color: var(--footer-bgc);
 }
+.footer-logo{
+    margin-right: 0px;
+margin-bottom: 20px;
+}
+    
 
 .location{
     display: flex;
@@ -417,12 +422,9 @@ footer{
 }
 
 .footer-info{
+    display: flex;
+    flex-direction: column;
     padding-top: 60px;
-}
-
-.footer-logo{
-    margin: 0;
-    margin-bottom: 20px;
 }
 
 
