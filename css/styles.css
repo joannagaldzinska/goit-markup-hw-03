@@ -345,7 +345,7 @@ li.sm-list-item{
     justify-content: space-between;
 }
 
-.clients-list-item{
+.clients-list-item .client{
 
     display: flex;
     justify-content: center;
@@ -407,7 +407,6 @@ margin-bottom: 20px;
     color: var(--white-title-color);
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-left: auto;
 }
 
 .footer-container{
