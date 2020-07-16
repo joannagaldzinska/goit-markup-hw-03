@@ -167,6 +167,7 @@ h1, h2, h3, h4, h5, h6, p, b {
     align-items: center;
     padding-bottom: 200px;
     padding-top: 200px;
+    
 
     background-color: teal;
 }
@@ -265,6 +266,10 @@ h1, h2, h3, h4, h5, h6, p, b {
 .activities-list{
     display: flex;
     justify-content: space-between;
+}
+
+.activities-list-item img{
+    display: block;
 }
 
 /* Команда */
@@ -471,15 +476,16 @@ button{
     margin-left: 8px;
 }
 
-/* карты */
-
 .portfolio{
     padding-bottom: 94px;
 }
 .portfolio-button:hover{
     color: var(--white-title-color);
     background-color: var(--additional-color);
+    cursor: pointer;
 }
+
+/* карты */
 
 .portfolio-list a{
     text-decoration: none;
